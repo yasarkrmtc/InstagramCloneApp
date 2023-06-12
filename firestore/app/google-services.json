@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1090713799690",
+    "project_id": "instagramcopy1-f5c9d",
+    "storage_bucket": "instagramcopy1-f5c9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090713799690:android:a501ba3cfa5215d34463f3",
+        "android_client_info": {
+          "package_name": "com.yasarkiremitci.firestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1090713799690-fjojr7tt50m86sueun5dc2qpi8j002f2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxhV6LlCgKp-CPZQR3oE3Hu5ftLVUNTdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1090713799690-fjojr7tt50m86sueun5dc2qpi8j002f2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

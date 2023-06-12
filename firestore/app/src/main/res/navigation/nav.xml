@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/fragmentLogin">
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="com.yasarkiremitci.firestore.View.FragmentLogin"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragment_recycler2"
+            app:destination="@id/fragment_recycler" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_recycler"
+        android:name="com.yasarkiremitci.firestore.View.Fragment_recycler"
+        android:label="fragment_recycler"
+        tools:layout="@layout/fragment_recycler" >
+        <action
+            android:id="@+id/action_fragment_recycler_to_commentFragment"
+            app:destination="@id/commentFragment" />
+        <action
+            android:id="@+id/action_fragment_recycler_to_fragmentLoadingImage"
+            app:destination="@id/fragmentLoadingImage" />
+        <action
+            android:id="@+id/action_fragment_recycler_to_fragmentLogin"
+            app:destination="@id/fragmentLogin" />
+    </fragment>
+    <fragment
+        android:id="@+id/commentFragment"
+        android:name="com.yasarkiremitci.firestore.CommentFragment"
+        android:label="fragment_comment"
+        tools:layout="@layout/fragment_comment" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLoadingImage"
+        android:name="com.yasarkiremitci.firestore.View.FragmentLoadingImage"
+        android:label="fragment_loading_image"
+        tools:layout="@layout/fragment_loading_image" >
+        <action
+            android:id="@+id/action_fragmentLoadingImage_to_fragment_recycler"
+            app:destination="@id/fragment_recycler" />
+    </fragment>
+</navigation>
